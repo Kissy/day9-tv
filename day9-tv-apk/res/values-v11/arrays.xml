@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_automatic_download_type">
+        <item>Day[9] Daily</item>
+        <item>AHGL</item>
+        <item>GSPA</item>
+        <item>CSL</item>
+        <item>Dreamhack</item>
+    </string-array>
+
+    <string-array name="entryvalues_automatic_download_type">
+        <item>DAY9_DAILY</item>
+        <item>AHGL</item>
+        <item>GSPA</item>
+        <item>CSL</item>
+        <item>DREAMHACK</item>
+    </string-array>
+
+</resources>

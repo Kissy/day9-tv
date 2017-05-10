@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/list_item_download_height"
+                android:padding="@dimen/basic_4">
+
+    <TextView android:id="@+id/vd_title"
+              android:textColor="@color/light"
+              android:textSize="@dimen/text_size_medium"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"
+              android:ellipsize="end"
+              android:singleLine="true"/>
+    <TextView android:id="@+id/vd_status"
+              android:textColor="@color/light"
+              android:textSize="@dimen/text_size_medium"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentRight="true"
+              android:paddingLeft="@dimen/basic_8"
+              android:paddingRight="@dimen/basic_4"/>
+
+    <TextView android:id="@+id/vd_subtype"
+              android:textColor="@color/light"
+              android:textSize="@dimen/text_size_small"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/vd_title"
+              android:layout_alignParentLeft="true"
+              android:paddingLeft="@dimen/basic_4"
+              android:paddingRight="@dimen/basic_4"
+              android:gravity="left" />
+    <TextView android:id="@+id/vd_progressText"
+              android:textColor="@color/light"
+              android:textSize="@dimen/text_size_small"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/vd_status"
+              android:layout_alignParentRight="true"
+              android:paddingLeft="@dimen/basic_4"
+              android:paddingRight="@dimen/basic_4"
+              android:gravity="right" />
+
+    <ProgressBar android:id="@+id/vd_progress"
+                 android:layout_below="@id/vd_subtype"
+                 android:layout_width="fill_parent"
+                 android:layout_height="@dimen/list_item_download_progress_height"
+                 android:layout_marginTop="@dimen/basic_4"
+                 style="@android:style/Widget.ProgressBar.Horizontal"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+
+    <application>kissy-day9-tv</application>
+    <version>2</version>
+
+    <threadsafe>true</threadsafe>
+
+    <admin-console>
+        <page name="Admin Settings" url="/admin/index.jsp"/>
+    </admin-console>
+
+</appengine-web-app>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector" >
+
+    <ImageView
+        android:id="@+id/vi_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_list_default"
+        android:layout_marginRight="@dimen/basic_8" />
+
+    <TextView
+        android:id="@+id/vi_date"
+        android:textColor="@color/light"
+        android:textSize="@dimen/text_size_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vi_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/basic_4"
+        android:layout_marginLeft="@dimen/basic_4"
+        android:layout_marginRight="@dimen/basic_8" />
+
+    <TextView
+        android:id="@+id/vi_title"
+        android:textColor="@color/light"
+        android:textSize="@dimen/text_size_small"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vi_image"
+        android:layout_toRightOf="@id/vi_image"
+        android:layout_toLeftOf="@id/vi_date"
+        android:layout_marginTop="@dimen/basic_4"
+        android:ellipsize="end"
+        android:lines="1" />
+
+    <TextView
+        android:id="@+id/vi_subtitle"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vi_title"
+        android:layout_toRightOf="@id/vi_image"
+        android:layout_alignBottom="@id/vi_image"
+        android:layout_marginBottom="@dimen/basic_4"
+        android:ellipsize="end"
+        android:lines="1" />
+
+</RelativeLayout>

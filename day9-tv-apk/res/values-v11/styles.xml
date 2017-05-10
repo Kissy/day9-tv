@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Start with the Holographic Light theme -->
+    <style name="Theme.Day9TV" parent="android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/black</item>
+
+        <!-- custom attributes -->
+        <item name="textHeaderMaxLines">@integer/text_header_max_lines</item>
+        <item name="trackAbstractMaxLines">@integer/track_abstract_max_lines</item>
+    </style>
+
+    <style name="ActionBar" parent="android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/yellow</item>
+        <item name="android:textColor">@color/light</item>
+        <item name="android:titleTextStyle">@style/ActionBarText</item>
+        <item name="android:logo">@drawable/actionbar_compat_logo</item>
+        <item name="android:icon">@drawable/ic_launcher</item>
+        <item name="android:selectableItemBackground">@drawable/actionbar_compat_button</item>
+    </style>
+
+    <style name="ActionBarText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

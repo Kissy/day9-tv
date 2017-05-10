@@ -1,0 +1,458 @@
+/*
+_________________________________________________________________
+-----------------------------------------------------------------
+
+    Day9.tv - CSS
+
+    Decription:
+    - CSS for Day9.TV
+
+    Author:
+    - Bernat Fortet
+
+    Version:
+    - v01 :: 15 February 2011
+
+________________________________________________________________
+---------------------------------------------------------------- */
+/*  -- IMPORTS -- */
+@import url("reset.css");
+
+/*
+COLORS --
+Yellow :: ffa926
+Orange :: ff7d26
+Salmon :: ff373f
+Light ::  b9b29c
+Secondary Plain Color :: 464243
+
+*/
+
+/*
+----------------------------------------------------------------
+    B A S E
+---------------------------------------------------------------- */
+
+body { margin:0; padding:0; background:url("../img/bkg.jpg") repeat -107px 219px #131213; color:#131213; font:62.5% Helvetica, Arial, Verdana, sans-serif;}
+
+#content { width:100%; overflow:hidden; }
+    a{ color:#ffa719; text-decoration:none; outline:0;}
+    a:hover{ text-decoration:underline;}
+    em { font-style: italic; }
+
+
+
+/*
+----------------------------------------------------------------
+    H E A D E R
+---------------------------------------------------------------- */
+
+/* ------ NAV ------*/
+
+#nav{ width:100%; height:72px;}
+    #nav-inner{ width:960px; margin:0 auto;}
+        #nav li{ float:left; margin: 25px 45px 0 0; display:block;}
+            #nav a{ color:#62605d; font-size:2.3em; text-transform:uppercase;}
+                #nav a:hover{ color:#ffa71a; text-decoration:none;}
+            #nav .active a{ color:#d7d5ca;}
+
+/* ------ Header ------*/
+
+#header { width:100%; height:133px; margin-bottom:27px; background:url("../img/header/header-bkg.jpg") #ffa719;  }
+    #header-inner { width:960px; height:133px; position:relative; margin:0 auto; z-index:20;}
+        #logo{ width:710px; height:133px; float:left; padding-left:10px; background:url("../img/header/header-diagonal.png") no-repeat right center;}
+            #logo a{ width:234px; height:133px; display:block; background:url("../img/header/header-logo.png") no-repeat left center; text-indent:-9999px;}
+
+        #countdown{ width:220px; height:100px; float:left; padding:33px 0 0 20px; background:url("../img/header/header-diagrev.png") repeat-x left center;}
+            #countdown h5{ width:115px; color:#d7d5ca; font-size:2.3em; text-transform:uppercase;}
+            #countdown .counter{ width:105px; color:#ffa719; font-size:3.4em; line-height:0em; text-transform:uppercase; }
+                .counter .hours{}
+                .counter .mins{}
+                .counter .segs{}
+            #countdown .what{ width:32px; height:28px; display:block; position:relative; left:85px; top:-40px; background:url("../img/header/countdown-what.png") no-repeat  center center; text-indent:-9999px; cursor:pointer;}
+            #countdown .info{ width:200px; height:52px; display:none; position:relative;left:-250px; top:-99px; padding:20px; background:rgba(0,0,0,0.9); -moz-border-radius:6px;}
+                #countdown .info p{ color:#d7d5ca; font-size:1.2em; line-height:1.6em;}
+
+
+        #live{ width:220px; height:100px; float:left; display:none; padding:33px 0 0 20px; background:url("../img/header/header-diagrev.png") repeat-x left center;}
+            #live h5{ width:115px; position:relative; left:2px; top:-18px; color:#d7d5ca; font-size:3.7em; text-transform:uppercase;}
+            #live h3{ width:115px; position:relative; left:0px; top:-30px; color:#ffa719; font-size:7.1em; text-transform:uppercase;}
+            #live img{ left:-10px; }
+
+    #header-right{ width:40%; height:133px; float:right; position:absolute; top:72px; right:0; background:url("../img/header/countdown-bkg.jpg") repeat-x left center;}
+
+/*
+----------------------------------------------------------------
+    C O N T E N T S
+---------------------------------------------------------------- */
+#content-inner{ width:960px; margin:0 auto 150px; padding:0 10px; color:#bcb3a2;}
+    h2{ color:#fff; font-size:4.8em; font-weight:bold; text-transform:uppercase;}
+    h4{ color:#d7d5ca; font-size:2.8em; text-transform:uppercase;}
+
+
+/*  ------------  HOMEPAGE  --------------------------------------------------- */
+
+    .home-featured{ width:677px; height:314px; float:left; margin-right:20px;}
+
+    .home-calendar{ width:263px; height:314px; float:left; position:relative;}
+        .month{ margin-bottom:15px;}
+            .home-calendar h5{ margin-bottom:5px; color:#ffa719; font-size:3.3em; text-transform:uppercase;}
+                .home-calendar h5 span{ width:0px; float:right;}
+                    /*.home-calendar h5 div{ width:20px; height:23px; display:block; float:right; position:relative; left:-2px; top:9px; background:#ffa719;}*/
+
+                    .home-calendar .jenuary div{ width:190px;}
+                    .home-calendar .february div{ width:178px;}
+                    .home-calendar .march div{ width:199px;}
+                    .home-calendar .april div{ width:214px;}
+                    .home-calendar .may div{ width:228px;}
+                    .home-calendar .june div{ width:221px;}
+                    .home-calendar .july div{ width:228px;}
+                    .home-calendar .september div{ width:164px;}
+                    .home-calendar .october div{ width:187px;}
+                    .home-calendar .november div{ width:170px;}
+                    .home-calendar .desember div{ width:172px;}
+
+                .home-calendar ul li{ margin-bottom:4px; font-size:1.2em;}
+                    .home-calendar li a{ padding:2px 0; color:#62605d;}
+                        .home-calendar li a:hover{ color:#d7d5ca !important; text-decoration:none;}
+                        .home-calendar li span{ float:right; color:#ff7a19;}
+                    .home-calendar ul .featured a{ color:#ff3333;}
+
+                .event-info{ width:200px; height:60px; display:none; position:absolute; z-index:20; top:0; left:-230px; padding:10px; background:rgba(255,255,255,0.95); color:#000; -moz-border-radius:6px;}
+
+.upcoming-events { padding-top: 25px; }
+.upcoming-events h5 { font-size:2.3em;  }
+.upcoming-events p { font-size: 1.2em; }
+.upcoming-events li { font-size:1.2em; line-height:1.6em; list-style-type: square; margin-left: 15px; }
+
+.watch-live { padding-left: 10px; padding-top: 16px; }
+
+/*  ------------  SINGLE VIDEO  --------------------------------------------------- */
+
+.single-video{ position:relative;}
+
+    .back{}
+        .back a{ background:url("../img/common/back.png") no-repeat 0 6px; margin-bottom:2px; padding-left:15px; color:#454242; font-size:2.2em; text-transform:uppercase;}
+            .back a:hover{ color:#d7d5ca; text-decoration:none;}
+
+
+    .title{ margin-bottom:26px; padding-bottom:9px; border-bottom:1px solid #282728;}
+        .title h1{ color:#d7d5ca; font-size:3.6em;}
+
+
+    .video{ width:940px; height:412px; overflow:hidden; overflow:hidden;}
+        .video-player{ width:678px; height:382px; position:absolute;  float:left; overflow:hidden; z-index:20;}
+            .video-embed{ width:678px; height:412px; position:relative; overflow:hidden; z-index:200;}
+        .video-data{ width:230px; height:412px; float:right; position:relative; margin-left:32px;}
+
+            .video-data-block{ margin-bottom:25px; background:rgba(20,20,20,0.5); font-size:1.2em;}
+                .video-data h6{ margin-bottom:4px; color:#454242;}
+                .video-data p{ color:#62605d; line-height:1.4em;}
+
+            .video-share{ position:absolute; bottom:0;}
+                .video-share div{ width:50px; height:61px; float:left; background:#ccc; color:#000;}
+                .video-share .luvit{ margin-right:9px; background:#ffa71b;}
+                .video-share .facebookit{ margin-right:9px; background:#3b5998;}
+                .video-share .tweetit{ margin-right:9px; background:#48c8f5;}
+                .video-share .shareit{ background:#fe6d4c;}
+
+
+    .video-player-footer{ width:677px; height:22px; position:absolute; top:486px; padding-top:8px;  font-size:1.2em; color:#62605d;}
+        .about-lights{ width:400px; float:left; margin-right:25px;}
+            .about-lights a{ width:63px; height:30px; display:block; float:left; position:relative; top:-8px; background:url("../img/common/bulb.png") no-repeat 6px 7px; text-indent:-9999px;}
+            .about-lights a:hover{ background-position:6px -17px;}
+        .about-likit{ float:right; margin-right:7px; padding-right:30px; background:url("../img/common/arrow.png") no-repeat right center;}
+
+
+    .comments-block{ width:940px; margin-top:26px; padding-bottom:26px; border-top:1px solid #282728; overflow:hidden;}
+        .comments-block h4{ margin-bottom:22px; color:#454242; font-size:2.8em; text-transform:uppercase;}
+
+        .comments-list{ width:420px; float:left; margin-right:40px;}
+                .xcomments-list{ width:678px;}
+            .comment{ width:433px; margin-bottom:20px; overflow:hidden;}
+                .comment-avatar{ width:75px; height:75px; float:left; margin-right:24px; overflow:hidden;}
+                    .comment-avatar img{ width:75px; height:75px;}
+                .comment-content{ width:284px; float:left; background:rgba(20, 20, 20, 0.5); font-size:1.2em; line-height:1.4em;}
+                    .comment-meta{ color:#454242;}
+                        .comment-meta strong{ color:#d7d5ca;}
+                    .comment-text{}
+                        .comment-text p{color:#62605d;}
+
+            .comments-pagination{}
+                .comments-pagination h6{ margin:6px 59px 0 0; display:inline; float:left; color:#62605d; font-size:1.2em;}
+                .comments-pagination li{ float:left;}
+                    .comments-pagination li a{ width:20px; height:17px; padding:6px 5px 4px 3px; display:block; color:#454242; font-size:1.2em; text-align:center;}
+                        .comments-pagination li a:hover{ background:#454242; color:#d7d5ca; text-decoration:none;}
+                .comments-pagination .active a{ background:#454242; color:#d7d5ca;}
+                    .comments-pagination .active a:hover{ background:#d7d5ca; color:#454242;}
+                .comments-pagination .previous{ font-size:1.2em;}
+                .comments-pagination .next{ font-size:1.2em;}
+
+        .comments-form{ width:467px; float:left;}
+            .comments-form-meta{ width:218px; float:left; margin-right:32px; font-size:1.2em;}
+                .comments-form input{ width:198px; height:28px; margin-bottom:13px; padding-left:20px; background:rgba(0,0,0,0.5); color:#454242; text-align:left; border:0;}
+                    .comments-form input:hover{ color:#d7d5ca;}
+                    .comments-form input:focus{ color:#d7d5ca;}
+
+            .comments-form-content{ width:200px; float:left; font-size:1.2em;}
+                .comments-form textarea{ width:200px; height:78px; margin-bottom:13px; padding:15px; background:rgba(0,0,0,0.5); color:#454242; border:0; line-height:1.4em;}
+                    .comments-form textarea:focus{ color:#d7d5ca;}
+                    .comments-form textarea:hover{ color:#d7d5ca;}
+                .comments-form .submit{ width:230px; background:#62605d; color:#000;}
+                .comments-form .submit:hover{ background:#d7d5ca; color:#454242;}
+
+
+/*  ------------  ARCHIVE  --------------------------------------------------- */
+
+.video-archive{}
+    .video-archive .title{ margin-bottom:1px;}
+        .title h3{ color:#d7d5ca; font-size:3.6em; text-transform:uppercase;}
+
+    .filters{ height:24px; margin-bottom:10px; padding:8px 0 0 10px; font-size:1.2em; border-top: 1px solid #282728; border-bottom:1px solid #282728;}
+        .filters h6{ float:left; margin-right:18px; font-weight:bold; color:#ffa719;}
+
+        .filter-tags{ width:500px; float:left;}
+            .filter-tags li{ float:left; margin-right:20px;}
+            .filter-tags a{ padding:3px; color:#bcb3a2; text-decoration:none;}
+            .filter-tags a:hover, .filter-tags a.active{ color:#fff; background:rgba(255,255,255,0.15);}
+
+        .filter-search{ width:245px; float:right; text-align:right;}
+            .filter-search input{ width:145px; height:20px; margin-top:-3px; padding-left:5px; background:rgba(255,255,255,0.08); color:#fff; border:0;}
+            .filter-search input:hover{ background:rgba(255,255,255,0.15);}
+            .filter-search input:focus{ background:rgba(255,255,255,0.15);}
+
+    table{ width:100%; font-size:1.2em;}
+        table tr{ height:38px; background:rgba(20, 20, 20, 0.5); border-bottom:1px solid #282728;}
+            table tr:hover{ background:rgba(70, 66, 67, 0.5); cursor:pointer;}
+            table td{ vertical-align:middle;    }
+                table .archive-title-video{ padding-left:10px;}
+                table .likes{ width:60px;}
+                    table .likes span{ padding:4px 4px 4px 19px; background:url("../img/common/luvs.png") no-repeat 5px 7px;}
+                table .comments{ width:60px;}
+                table .comments span a{ width:30px; height:14px; display:block; padding:4px 4px 4px 19px; background:url("../img/common/comments.png") no-repeat 5px 7px; overflow:hidden;}
+                table .tags{ padding-right:10px; color:#5d5654; text-align:right;}
+                    table .tags a{}
+                    table .tags a:hover{ color:#fff; background-color:rgba(255,255,255,0.15); text-decoration:none;}
+
+                    table a{ padding:3px; color:#bcb3a2; text-decoration:none;}
+                    table a:hover{ text-decoration:none;}
+
+
+/*  --------  SINGLE PAGES  -------- */
+
+    .page .title{ width:750px; height:315px; position:relative; left:-132px; text-indent:-9999px; border-bottom:0; }
+    .page-content{ width:600px; float:left; margin-right:75px;}
+        .page-text{ margin-bottom:50px;}
+            .page-text p{ width:550px; background:rgba(20, 20, 20, 0.5); color:#62605d; font-size:1.2em; line-height:1.6em; margin-bottom:15px;}
+                .page-text p strong{ color:#d7d5ca; font-weight:bold;}
+
+                .links-block{ width:540px; margin-top:26px; padding-top: 25px; padding-bottom:26px; border-top:1px solid #282728; border-bottom:1px solid #282728; overflow:hidden;}
+                .page-text li { font-size:1.2em; line-height:1.6em; list-style-type: square; margin-left: 35px; }
+
+        .page .video-player{ position:relative;}
+
+    .page-sidebar{ width:250px; float:left;}
+        .page-sidebar h4{ margin-bottom:22px; color:#d7d5ca; font-size:2.8em; text-transform:uppercase;}
+
+        .page-sidebar-content{ height:110px; margin-bottom:100px;}
+            .page-sidebar p{ background:rgba(20, 20, 20, 0.5) color:#62605d; font-size:1.2em; line-height:1.4em;}
+            .page-sidebar a{ margin-top:10px; display:block; font-size:1.2em; line-height:1.4em;}
+
+        .page-sidebar-social{ height:240px; position:relative;}
+            .page-sidebar-social .video-share{ top:55px;}
+
+
+            .follow{ position:absolute; bottom:0;}
+                .follow div{ width:204px; height:38px; margin-bottom:10px;}
+                    .follow a{ width:204px; height:38px; display:block; text-indent:-9999px;}
+                    .follow a:hover{ opacity:0.7;}
+                    .follow .open-chat { background:url("../img/sections/open-chat.png") no-repeat 0px 0px;}
+                    .follow .love{ background:url("../img/sections/social-follow.png") no-repeat 0px 0px;}
+                    .follow .facebook{ background:url("../img/sections/social-follow.png") no-repeat 0px -48px;}
+                    .follow .twitter{ background:url("../img/sections/social-follow.png") no-repeat 0px -96px;}
+                    .follow .youtube{ background:url("../img/sections/social-follow.png") no-repeat 0px -144px;}
+                    .follow .share{ background:url("../img/sections/social-follow.png") no-repeat 0px -192px;}
+
+/*  --------  PRESS  -------- */
+
+        .d9press li { margin:0; list-style-type: none; height: 38px; border-bottom: 1px solid #282728; padding-top: 20px;  }
+        .d9press .pdate { text-align: right; float: left; padding-right: 20px;  font-weight: bold; width: 80px; display: block; }
+        .d9press .plink { text-align: left; display:  block; }
+
+
+        .d9press .npr { background:url("../img/press/npr.jpg") right no-repeat; }
+        .d9press .economist { background:url("../img/press/economist.jpg") right no-repeat; }
+
+        .d9press .pcgamer { background:url("../img/press/pcgamer.jpg") right no-repeat; }
+        .d9press .blizzard { background:url("../img/press/blizzard.jpg") right no-repeat; }
+        .d9press .gamasutra { background:url("../img/press/gamasutra.jpg") right no-repeat; }
+        .d9press .machinima { background:url("../img/press/machinima.jpg") right no-repeat; }
+        .d9press .shacknews { background:url("../img/press/shacknews.jpg") right no-repeat; }
+        .d9press .pcworld { background:url("../img/press/pcworld.jpg") right no-repeat; }
+        .d9press .efrance { background:url("../img/press/efrance.jpg") right no-repeat; }
+        .d9press .rps { background:url("../img/press/rps.jpg") right no-repeat; }
+
+
+/*  --------  FRIENDS  -------- */
+
+
+    .d9friends { width: 685px; margin-top: 10px; margin-bottom: 10px; }
+        .d9friends li { width:153px; height: 132px;  display: inline-block; margin-left:0; margin-bottom:10px; border: #ffa926 solid 1px; }
+            .d9friends a { width:153px; height: 132px; display: block; text-indent:-9999px; }
+            .d9friends li:hover{ opacity:0.7;}
+            .d9friends .bliptv { background:url("../img/friends/bliptv.jpg") no-repeat; }
+            .d9friends .blizzard { background:url("../img/friends/blizzard.jpg") no-repeat; }
+            .d9friends .csl { background:url("../img/friends/csl.jpg") no-repeat; }
+            .d9friends .d9fan { background:url("../img/friends/day9fan.jpg") no-repeat; }
+            .d9friends .djwheat { background:url("../img/friends/djwheat.jpg") no-repeat; }
+            .d9friends .dreamhack { background:url("../img/friends/dreamhack.jpg") no-repeat; }
+            .d9friends .epicrants { background:url("../img/friends/epicrants.jpg") no-repeat; }
+            .d9friends .esl { background:url("../img/friends/esltv.jpg") no-repeat; }
+            .d9friends .esfrance { background:url("../img/friends/esportsfrance.jpg") no-repeat; }
+            .d9friends .fragster { background:url("../img/friends/fragster.jpg") no-repeat; }
+            .d9friends .gamescasttv { background:url("../img/friends/gamescasttv.jpg") no-repeat; }
+            .d9friends .glhf { background:url("../img/friends/glhftv.jpg") no-repeat; }
+            .d9friends .gomtv { background:url("../img/friends/gomtv.jpg") no-repeat; }
+            .d9friends .gosugamers { background:url("../img/friends/gosugamers.jpg") no-repeat; }
+            .d9friends .hd { background:url("../img/friends/hdstarcraft.jpg") no-repeat; }
+            .d9friends .husky { background:url("../img/friends/husky.jpg") no-repeat; }
+            .d9friends .iccup { background:url("../img/friends/iccup.jpg") no-repeat; }
+            .d9friends .ipl { background:url("../img/friends/ipl.jpg") no-repeat; }
+            .d9friends .itmejp { background:url("../img/friends/itmejp.jpg") no-repeat; }
+            .d9friends .justintv { background:url("../img/friends/justintv.jpg") no-repeat; }
+            .d9friends .mlg { background:url("../img/friends/mlg.jpg") no-repeat; }
+            .d9friends .myeg { background:url("../img/friends/myeg.jpg") no-repeat; }
+            .d9friends .mysc { background:url("../img/friends/mystarcraft.jpg") no-repeat; }
+            .d9friends .nasl { background:url("../img/friends/nasl.jpg") no-repeat; }
+            .d9friends .onemoregame { background:url("../img/friends/onemoregame.jpg") no-repeat; }
+            .d9friends .proam { background:url("../img/friends/nvidia.jpg") no-repeat; }
+            .d9friends .rootgaming { background:url("../img/friends/root-gaming.jpg") no-repeat; }
+            .d9friends .sc2ranks { background:url("../img/friends/sc2ranks.jpg") no-repeat; }
+            .d9friends .scl { background:url("../img/friends/sclegacy.jpg") no-repeat; }
+            .d9friends .scr { background:url("../img/friends/reddit.jpg") no-repeat; }
+            .d9friends .soes { background:url("../img/friends/soesstuff.jpg") no-repeat; }
+            .d9friends .teamliquid { background:url("../img/friends/teamliquid.jpg") no-repeat; }
+            .d9friends .totalbiscuit { background:url("../img/friends/totalbiscuit.jpg") no-repeat; }
+            .d9friends .wplayed { background:url("../img/friends/wellplayed.jpg") no-repeat; }
+
+/*  --------  MANIFESTO  -------- */
+
+    .manifesto .title{ background:url("../img/sections/manifesto-bkg.jpg") no-repeat;}
+    .about .title{ background:url("../img/sections/about-bkg.jpg") no-repeat;}
+    .tipjar .title{ background:url("../img/sections/tipjar-bkg.jpg") no-repeat;}
+
+
+/*  --------  STRUCTURE  -------- */
+
+/*
+----------------------------------------------------------------
+    F O O T E R
+---------------------------------------------------------------- */
+    #footer{ width:100%; height:450px; margin:35px 0 0; background:url("../img/bkg-darker.jpg") repeat top #0f0e0f; font-size:1.2em; line-height:1.6em; color:#464243;}
+        #footer-wrapper{ width:100%; background:url("../img/footer/bkg.jpg") repeat-x top;}
+            #footer-inner{ width:960px; margin:0 auto; padding-top:50px; }
+
+                #footer-content{ widows:100%; padding:0 10px; overflow:hidden;}
+                    #footer-content h3{ height:31px; margin-bottom:20px; font-size:2.2em; color:#d7d5ca; font-weight:bold; text-transform:uppercase; overflow:hidden;}
+                        #footer-content h3 a{ color:#d7d5ca;}
+                            #footer-content h3 a:hover{ color:#464243;}
+
+                    #footer-content a{ text-decoration:none;}
+                        /*#footer-content a:hover{ color:#ffa71a;}*/
+
+                    .latest-vods{ width:500px; float:left; margin-right:40px; background:rgba(13,12,13,0.4);}
+                        .latest-vods h3{}
+                            .latest-vods h3 span{ color:#ffa71a;}
+                        .latest-vods li{}
+                            .latest-vods li a{ display:block; padding:4px 0; color:#63605e;}
+                                                        .latest-vods li > a { float: left; width: 70%;}
+                                .latest-vods .comments{ float:right; margin:0 16px; padding-left:13px; background:url("../img/common/comments.png") no-repeat left center; color:#464243 !important;}
+                                .latest-vods .luvs{ float:right; padding-left:13px;background:url("../img/common/luvs.png") no-repeat left center; color:#464243 !important;}
+
+                    .latest-tweets{ width:400px; float:left; background:rgba(13,12,13,0.4);}
+                        .latest-tweets h3{}
+                            .latest-tweets h3 span{ color:#48c8f5;}
+                        .tweet{ padding:10px; background:url("../img/footer/dots.png") repeat-x left bottom;}
+                            .tweet-content{}
+                            .tweet-meta{ color:#d7d5ca; font-style:italic;  }
+
+
+                #footer-meta{ margin-top:35px; padding:30px 10px 0; overflow:hidden; border-top:1px solid #282728;}
+                    #footer-meta a{color:#464243;}
+                        /*#footer-meta a:hover{color:#63605e; border-bottom:1px solid #63605e; text-decoration:none;}*/
+
+                    .footer-legal{ width:180px; margin-right:40px; float:left;}
+                        .footer-legal a{}
+
+                    .footer-description{ width:280px; margin-right:40px; float:left;}
+
+                    .footer-nav{ width:365px; margin-right:35px; float:left;}
+                        .footer-nav li{ float:left; margin-right:15px;}
+                            .footer-nav  a{ float:left; text-transform:uppercase;}
+
+            .credits{ width:200px; position:absolute; left:50%; margin:65px 0 0 -100px; color:#ffa926;}
+            .credits .credits-designer {text-align: center;}
+            .credits .credits-designer a{ color:#ffa926 !important; border-bottom:1px solid #ffa926;}
+            .credits .credits-designer a:hover{ color:#fff !important; text-decoration:none; border-bottom:1px solid #fff;}
+
+
+
+/*
+----------------------------------------------------------------
+    M I S C
+---------------------------------------------------------------- */
+
+    .not-found #content h1 { font-size: 6em; text-align: center ; text-transform:uppercase;}
+    .not-found #content  p { color:#63605e; font-size:1.6em; text-align: center; }
+
+    .watch-daily-parts li { margin:0; padding-bottom: 10px; list-style-type: none;   }
+    .watch-daily-parts h4 { float: left; padding-right: 5px;  }
+    .watch-daily-parts span { font-size: 10px; float: left; clear:both;  }
+
+/*
+----------------------------------------------------------------
+    M I S C
+---------------------------------------------------------------- */
+#wip { width:200px; position:fixed; left:0; top:0; padding:15px; background:#f44d4d; color:#fff; font-size:1.1em; z-index:2000}
+hr { clear:both;}
+
+
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+@media all and (orientation:portrait) {}
+
+@media all and (orientation:landscape) {}
+
+@media screen and (max-device-width: 480px) {  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */ }
+
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+.clear { clear: both; }
+
+#live { cursor: pointer; }
+#live p.url { display: none; }

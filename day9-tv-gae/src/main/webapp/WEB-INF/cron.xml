@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+    <cron>
+        <url>/tasks/cron</url>
+        <description>Launch the TaskQueue to update the video list.</description>
+        <schedule>every 6 hours synchronized</schedule>
+    </cron>
+</cronentries>

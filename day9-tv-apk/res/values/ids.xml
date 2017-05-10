@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <item type="id" name="actionbar_compat" />
+    <item type="id" name="actionbar_compat_container" />
+    <item type="id" name="actionbar_compat_logo" />
+    <item type="id" name="actionbar_compat_text" />
+    <item type="id" name="actionbar_compat_menu" />
+    <item type="id" name="actionbar_compat_menu_refresh" />
+    <item type="id" name="actionbar_compat_menu_refreshing" />
+
+
+    <item type="id" name="video_part_base" />
+
+    <item type="id" name="dcm_view" />
+    <item type="id" name="dcm_delete" />
+    <item type="id" name="dcm_resume" />
+    <item type="id" name="dcm_pause" />
+    <item type="id" name="dcm_cancel" />
+
+    <item type="id" name="menu_resume" />
+    <item type="id" name="menu_pause" />
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>remote-videos</servlet-name>
+        <servlet-class>fr.kissy.day9tv.gae.servlet.VideosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>remote-videos</servlet-name>
+        <url-pattern>/remote/videos</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>remote-register</servlet-name>
+        <servlet-class>fr.kissy.day9tv.gae.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>remote-register</servlet-name>
+        <url-pattern>/remote/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin -->
+    <servlet>
+        <servlet-name>admin-settings</servlet-name>
+        <servlet-class>fr.kissy.day9tv.gae.servlet.admin.UpdateTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin-settings</servlet-name>
+        <url-pattern>/admin/settings</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>admin-notify</servlet-name>
+        <servlet-class>fr.kissy.day9tv.gae.servlet.admin.NotificationsTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin-notify</servlet-name>
+        <url-pattern>/admin/notify</url-pattern>
+    </servlet-mapping>
+
+    <!-- Cron & Tasks -->
+    <servlet>
+        <servlet-name>cron</servlet-name>
+        <servlet-class>fr.kissy.day9tv.gae.servlet.CronServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cron</servlet-name>
+        <url-pattern>/tasks/cron</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>worker-update</servlet-name>
+        <servlet-class>fr.kissy.day9tv.gae.servlet.worker.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>worker-update</servlet-name>
+        <url-pattern>/tasks/worker/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>worker-notifications</servlet-name>
+        <servlet-class>fr.kissy.day9tv.gae.servlet.worker.NotificationsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>worker-notifications</servlet-name>
+        <url-pattern>/tasks/worker/notifications</url-pattern>
+    </servlet-mapping>
+
+    <!-- Security -->
+    <security-constraint>
+        <web-resource-collection>
+            <url-pattern>/tasks/*</url-pattern>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+</web-app>

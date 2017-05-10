@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:key="preference_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_preferences">
+        <ListPreference
+            android:key="video_quality"
+            android:title="@string/video_quality"
+            android:summary="@string/summary_video_quality"
+            android:entryValues="@array/video_quality_entries_value"
+            android:entries="@array/video_quality_entries"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="download_category"
+        android:title="@string/download_preferences">
+        <CheckBoxPreference
+            android:key="no_download"
+            android:title="@string/no_download"
+            android:summary="@string/summary_no_download"
+            android:disableDependentsState="true"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="download_wifi_only"
+            android:title="@string/download_wifi_only"
+            android:summary="@string/summary_download_wifi_only"
+            android:dependency="no_download"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/database_preferences">
+        <Preference
+            android:key="clear_videos"
+            android:title="@string/clear_videos"
+            android:summary="@string/summary_clear_videos" />
+        <Preference
+            android:key="clear_downloads"
+            android:title="@string/clear_downloads"
+            android:summary="@string/summary_clear_downloads" />
+        <Preference
+            android:key="delete_downloads"
+            android:title="@string/delete_downloads"
+            android:summary="@string/summary_delete_downloads" />
+    </PreferenceCategory>
+</PreferenceScreen>

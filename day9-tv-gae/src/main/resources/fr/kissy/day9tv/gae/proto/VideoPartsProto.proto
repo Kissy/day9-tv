@@ -1,0 +1,39 @@
+/**
+ * Video proto.
+ *
+ * @author Guillaume Le Biller (<i>lebiller@ekino.com</i>)
+ * @version $Id$
+ */
+
+package fr.kissy.day9tv.gae.model;
+
+option java_package = "fr.kissy.day9tv.gae.proto";
+option java_outer_classname = "VideoPartsProto";
+option java_generic_services = false;
+option optimize_for = LITE_RUNTIME;
+
+message VideoParts {
+    message VideoPart {
+        message VideoFile {
+            enum VideoMediaType {
+                SOURCE = 0;
+                BLIP_LD = 1;
+                BLIP_SD = 2;
+                BLIP_HD = 3;
+            }
+
+            required string file = 40;
+            optional VideoMediaType type = 41;
+            optional fixed32 width = 42;
+            optional fixed32 height = 43;
+            optional fixed32 duration = 44;
+            optional fixed64 size = 45;
+        }
+
+        required fixed64 id = 30;
+        optional int32 part = 31;
+        repeated VideoFile files = 32;
+    }
+
+    repeated VideoPart videoParts = 20;
+}

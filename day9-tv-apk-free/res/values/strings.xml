@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Day[9] TV Free</string>
+    <string name="not_available">This feature is not available in the free version.</string>
+</resources>

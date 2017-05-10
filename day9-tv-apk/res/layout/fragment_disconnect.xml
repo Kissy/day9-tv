@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <TextView
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/basic_8"
+            android:text="@string/disconnect_title"
+            android:textSize="@dimen/text_size_large"/>
+
+    <TextView
+            android:id="@+id/disconnect_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/header"
+            android:padding="@dimen/basic_8"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible"/>
+
+    <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/basic_8"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/disconnect"
+                android:text="@string/btn_disconnect"
+                android:layout_marginTop="@dimen/basic_4"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/exit"
+                android:text="@string/btn_close"
+                android:layout_marginTop="@dimen/basic_4"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

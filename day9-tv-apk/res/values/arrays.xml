@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_max_number_of_downloads">
+        <item>1 download</item>
+        <item>5 downloads</item>
+        <item>10 downloads</item>
+        <item>20 downloads</item>
+        <item>All</item>
+    </string-array>
+
+    <string-array name="entryvalues_max_number_of_downloads">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="entries_automatic_download_quality">
+        <item>Source</item>
+        <item>LD (480 x 270)</item>
+        <item>SD (640 x 360)</item>
+        <item>HD (1280 x 720)</item>
+    </string-array>
+
+    <string-array name="entryvalues_automatic_download_quality">
+        <item>SOURCE</item>
+        <item>BLIP_LD</item>
+        <item>BLIP_SD</item>
+        <item>BLIP_HD</item>
+    </string-array>
+
+    <string-array name="video_quality_entries">
+        <item>LD (480 x 270)</item>
+        <item>SD (640 x 360)</item>
+        <item>HD (1280 x 720)</item>
+    </string-array>
+
+    <string-array name="video_quality_entries_value">
+        <item>ld</item>
+        <item>sd</item>
+        <item>hd</item>
+    </string-array>
+
+</resources>

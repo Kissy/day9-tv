@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Day[9] TV</string>
+
+    <!-- Description -->
+    <string name="description_home">Home</string>
+    <string name="description_settings">Preferences</string>
+    <string name="description_help">Help</string>
+    <string name="description_refresh">Refresh</string>
+    <string name="description_favorite">Favorite</string>
+    <string name="description_share">Share</string>
+    <string name="description_video_details">Video Details</string>
+
+    <!-- Button -->
+    <string name="btn_videos">Videos</string>
+    <string name="btn_downloads">Downloads</string>
+    <string name="btn_random">Random</string>
+    <string name="btn_favorites">Favorites</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_close">Close</string>
+
+    <!-- Accounts -->
+    <string name="add_account">Add account…</string>
+    <string name="attention">Attention</string>
+    <string name="connect_title">Register for automatic updates</string>
+    <string name="disconnect_title">Unregister for automatic updates</string>
+    <string name="select_account">Select the account you wish to authorize:</string>
+    <string name="connect_text">In order to receive new video automatically you must register your device.
+        This step is optionnal and you can later register or unregister your device in the "Accounts" preferences.</string>
+    <string name="disconnect_text">This device is currently connected to the cloud as %1$s. To disconnect, press the button below.</string>
+    <string name="registering">Registering device… Please wait.</string>
+    <string name="registering_secondstep">Saving device… Please wait.</string>
+    <string name="unregistering">Unregistering device… Please wait.</string>
+    <string name="unregistering_secondstep">Deleting device… Please wait.</string>
+
+    <!-- Preferences -->
+    <string name="general_preferences">General</string>
+    <string name="database_preferences">Database</string>
+    <string name="download_preferences">Download</string>
+    <string name="automatic_download_preferences">Automatic Download</string>
+    <string name="quality_preferences">Video Qualities</string>
+    <string name="save_to_database">Save list to database</string>
+    <string name="summary_save_to_database">You can save results to database to browse the list if your phone is offline.</string>
+    <string name="clear_videos">Empty the video list</string>
+    <string name="summary_clear_videos">Delete all previously stored videos in the database.</string>
+    <string name="clear_downloads">Empty the download list</string>
+    <string name="summary_clear_downloads">Delete all previously stored downloads in the database.</string>
+    <string name="delete_downloads">Delete all downloaded files</string>
+    <string name="summary_delete_downloads">Delete all downloaded files but keeps downloads.</string>
+    <string name="no_download">Disable download</string>
+    <string name="summary_no_download">Pause all downloads.</string>
+    <string name="download_wifi_only">Download via Wifi only</string>
+    <string name="summary_download_wifi_only">Pause downloads when not connected to Wifi.</string>
+    <string name="data_removed">The data have been removed</string>
+    <string name="files_deleted">The video files have been deleted</string>
+    <string name="no_downloads">Downloads are disabled. Please check preferences.</string>
+    <string name="video_quality">Video Quality</string>
+    <string name="summary_video_quality">Choose the preferred quality when watching or downloading videos.</string>
+    <string name="source_quality">Source</string>
+    <string name="ld_quality">Blip LD</string>
+    <string name="sd_quality">Blip SD</string>
+    <string name="hd_quality">Blip HD</string>
+    <string name="summary_quality">Display only %1$s video qualities.</string>
+    <string name="accounts">Accounts</string>
+    <string name="summary_accounts">Register or Unregister your device to receive automatic videos updates.</string>
+    <string name="update_videos_in_background">Background videos update</string>
+    <string name="summary_update_videos_in_background">Retrieve new videos automatically even if Day9 TV is not open.</string>
+    <string name="notify_new_videos_availables">New videos notification</string>
+    <string name="summary_notify_new_videos_availables">Create a notification when the video list is updated.</string>
+    <string name="automatically_download_videos">Automatic download</string>
+    <string name="summary_automatically_download_videos">Automatically download new videos when they are available.</string>
+    <string name="automatic_download_options">Automatic download options</string>
+    <string name="summary_automatic_download_options">Choose quality and types of downloaded videos</string>
+    <string name="automatic_download_quality">Filter downloaded videos qualities</string>
+    <string name="summary_automatic_download_quality">Choose which video quality to download automatically.</string>
+    <string name="automatic_download_type">Filter downloaded videos types</string>
+    <string name="summary_automatic_download_type">Choose which video type to download automatically.</string>
+    <string name="max_number_of_downloads">Max number of downloads</string>
+    <string name="summary_max_number_of_downloads">Specify the maximum number of downloads to save.</string>
+    <string name="automatically_delete_downloads">Automatically delete videos</string>
+    <string name="summary_automatically_delete_downloads">If there is too much downloads, delete oldest before starting new ones.</string>
+
+    <!-- Loader -->
+    <string name="loading">Loading …</string>
+    <string name="empty_videos">No videos found</string>
+    <string name="empty_downloads">No downloads found</string>
+
+    <string name="title_share">Share using</string>
+    <string name="videopart">Part #<xliff:g id="part">%1$s</xliff:g></string>
+    <string name="video">Video</string>
+    <string name="search_hint">Search the video list</string>
+    <string name="title_search_query">Search for \'<xliff:g id="query">%1$s</xliff:g>\'</string>
+
+    <string name="video_already_downloaded">The video is has already been downloaded.</string>
+    <string name="video_downloading">The video is downloading.</string>
+    <string name="file_not_found">The video file is not found.</string>
+
+    <string name="notification_download_title">Downloading Day[9] TV…</string>
+    <string name="notification_new_videos_available_title">New Day[9] TV episodes</string>
+    <string name="notification_new_videos_available">New episodes are availables</string>
+
+    <!-- Downloads -->
+    <string name="download_context_view">View</string>
+    <string name="download_context_delete">Delete</string>
+    <string name="download_context_resume">Resume</string>
+    <string name="download_context_pause">Pause</string>
+    <string name="download_context_cancel">Cancel</string>
+
+    <string name="download_default_status">Unknown status</string>
+    <string name="download_success_status">Complete</string>
+    <string name="download_pending_status">Pending</string>
+    <string name="download_running_status">Downloading</string>
+    <string name="download_canceled_status">Canceled</string>
+
+    <!-- Errors -->
+    <string name="connection_error">Network connection error. Please try check your settings.</string>
+    <string name="connection_notavailable">There is no active connection. Please connect to internet first.</string>
+    <string name="connection_wifi_notavailable">There is no active Wifi connection. Please check your settings.</string>
+    <string name="needs_account">To automatically receive videos updates, you must first register a Google account.</string>
+    <string name="no_new_videos">There is no new video.</string>
+    <string name="external_storage_not_ready">The external storage is not present or not writable.</string>
+    
+    <!-- Types -->
+    <string name="day9_daily">Day[9] Daily</string>
+    <string name="ahgl">AHGL</string>
+    <string name="gspa">GSPA</string>
+    <string name="csl">CSL</string>
+    <string name="dreamhack">Dreamhack</string>
+
+    <string name="share_template"><xliff:g id="title">%1$s</xliff:g>, <xliff:g id="subtitle">%2$s</xliff:g>\n\n<xliff:g id="description">%3$s</xliff:g></string>
+
+</resources>

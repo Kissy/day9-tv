@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <TextView android:id="@+id/header"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:padding="@dimen/basic_8"
+              android:text="@string/connect_title"
+              android:textSize="@dimen/text_size_large"/>
+
+    <TextView android:id="@+id/connect_text"
+              android:text="@string/connect_text"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/header"
+              android:padding="@dimen/basic_8"
+              android:textSize="@dimen/text_size_medium"
+              android:visibility="visible"/>
+
+    <TextView android:id="@+id/select_text"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/connect_text"
+              android:text="@string/select_account"
+              android:layout_margin="@dimen/basic_8"/>
+
+    <View android:id="@+id/divider"
+          android:layout_width="fill_parent"
+          android:layout_height="1dp"
+          android:layout_below="@id/select_text"
+          android:background="#808080"/>
+
+    <ListView android:id="@+id/select_account"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/divider"
+              android:layout_margin="@dimen/basic_8"
+              android:divider="#FFFFFF"
+              android:textSize="@dimen/text_size_large"
+              android:background="@android:color/transparent"
+              android:cacheColorHint="@android:color/transparent">
+    </ListView>
+
+    <LinearLayout android:id="@+id/footer"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="@dimen/basic_8"
+                  android:layout_alignParentBottom="true">
+
+        <Button android:id="@+id/connect"
+                android:text="@string/btn_connect"
+                android:layout_marginTop="@dimen/basic_4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/exit"
+                android:text="@string/btn_skip"
+                android:layout_marginTop="@dimen/basic_4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

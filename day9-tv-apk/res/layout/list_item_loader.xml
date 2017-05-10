@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <ProgressBar
+        android:id="@+id/loader_spinner"
+        android:indeterminate="true"
+        android:layout_width="@dimen/item_loader_progressbar_size"
+        android:layout_height="@dimen/item_loader_progressbar_size"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/basic_16"
+        style="@android:style/Widget.ProgressBar.Small" />
+</LinearLayout>

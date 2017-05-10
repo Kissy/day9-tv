@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark"
+    android:layout_marginTop="@dimen/basic_16"
+    android:padding="@dimen/basic_8">
+
+    <TextView
+        android:id="@+id/vp_duration"
+        android:textColor="@color/light"
+        android:textSize="@dimen/text_size_small"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vp_title"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/vp_duration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/vp_title"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/basic_4">
+
+        <ImageView
+            android:id="@+id/vp_play"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:src="@drawable/button_play"
+            android:layout_marginLeft="@dimen/basic_8" />
+
+        <ImageView
+            android:id="@+id/vp_download"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/vp_play"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:src="@drawable/icon_download"
+            android:layout_marginLeft="@dimen/basic_8" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/vp_download">
+
+            <TextView
+                android:id="@+id/vp_quality"
+                android:textSize="@dimen/text_size_small"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/vp_size"
+                android:textSize="@dimen/text_size_small"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

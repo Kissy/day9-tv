@@ -1,0 +1,159 @@
+The dedicated Day[9] TV application: browse, watch, download, search, favorites and more.
+Watch hundreds of Starcraft 2 replay analysis commented by Sean "Day[9]" Plott.
+
+* Browse all Day[9] episodes.
+* Watch episodes directly through your phone or tablet.
+* Save your favorites episodes for an easy access.
+* Download episodes over WiFi and watch it later.
+* Search among videos with keywords.
+* Automatic videos list updates.
+* Notification of new availables videos.
+* Automatic download new availables videos.
+
+The device registration step is optional. This registration is used to retrieve videos list automatically in backgroud.
+A notification can be displayed when new videos are availables.
+
+Permissions :
+* Internet - Fetch the video list and play videos streaming.
+* Wake lock - Android C2DM notifications.
+* Accounts - Android C2DM notifications.
+* External Storage - Download videos to SD cards.
+
+Comming soon :
+* Android tablet optimisations
+
+-- All credits for videos goes to Sean "Day[9]" Plott --
+
+
+-- Version 2.1 --
+* Fix a bug of duplicated videos.
+* Improvement for tablets.
+
+-- Version 2.0 --
+* Fix a bug on video list refresh.
+* Greatly reduced the size of the APK.
+* Added the automatic video download feature.
+
+
+
+L'application Day[9] TV: parcourir, regarder, télécharger, rechercher, favoris et plus encore.
+Regardez des centaines d'analyses de parties de Starcraft 2 commentées par le célèbre Sean "Day[9]" Plott.
+
+* Parcourir tous les épisodes Day[9].
+* Regarder les épisodes directement sur votre téléphone ou tablette.
+* Enregistrez vos épisodes favoris pour un accès facile.
+* Télécharger un épisodes via WiFi et le regarder plus tard.
+* Recherche parmi les vidéos grâce aux mots clés.
+* Liste de vidéos mise à jour automatiquement.
+* Notification de nouvelles vidéo(s) disponible(s).
+* Téléchargement automatique de nouvelles vidéos disponibles.
+
+L'étape d'enregistrement de l'appareil est facultative. L'enregistrement est utilisé pour récupérer la liste des vidéos automatiquement en tâche de fond.
+Une notification peut être affiché quand de nouvelles vidéos sont disponibles.
+
+Permissions :
+* Internet - Recuperer et lire la liste des vidéos.
+* Wake lock - Notifications Android C2DM.
+* Comptes - Notifications Android C2DM.
+* Stockage externe - Télécharger les vidéos sur carte SD.
+
+Prochainement:
+* Optimisations pour les tablette Android
+
+-- Credits pour les vidéos : Sean "Day[9]" Plott --
+
+
+
+-- Version 2.1 --
+* Suppression de la duplication des vidéos.
+* Améliorations pour tablettes.
+
+-- Version 2.0 --
+* Correction de l'actualisation de la liste de vidéos.
+* Reduction significative de la taille de l'APK.
+* Système de téléchargement automatique de nouvelles vidéos.
+
+
+
+
+
+
+Hello,
+
+I am a huge fan of Day[9] TV and watch almost all his dailies and I cannot watch it live because the live is casting at 4am for French !
+
+Working as a software engineer, I decided to make an Android application in order to be able to watch and downloads Day9's episodes.
+The application is using the Blip.tv API to retrieve the content and a custom filter to merge episodes parts. The application allow you to watch directly on your phone or to download the episode and watch it offline later.
+
+[url=http://goo.gl/LHwJn][img]http://i.imgur.com/8mRNV.png[/img][/url]
+
+[center][url=http://goo.gl/LHwJn]Day[9] TV - Android application[/url][/center]
+[u][b]Features :[/b][/u]
+[ul] Browse all Day[9] episodes.
+[ul] Watch episodes directly through your phone or tablet.
+[ul] Save your favorites episodes for an easy access.
+[ul] Download episodes over WiFi and watch it later.
+[ul] Search among videos with keywords.
+[ul] Automatic videos list updates.
+[ul] Notification of new availables videos.
+
+[u]Note : [/u]The device registration step is optional. This registration is used to retrieve videos list automatically in backgroud.
+A notification can be displayed when new videos are availables.
+
+[u][b]Permissions :[/b][/u]
+[ul] Internet - Fetch the video list and play videos streaming.
+[ul] Wake lock - Android C2DM notifications.
+[ul] Accounts - Android C2DM notifications.
+[ul] External Storage - Download videos to SD cards.
+
+[u][b]Comming soon :[/b][/u]
+[ul] Automatic download new availables videos
+[ul] Android tablet optimisations
+
+I hope that you will enjoy the application. I am currently trying to port my application to iPhone & iPad because I know that lot of people are using iOS instead of Android :)
+Feel free to ask if you have any questions about this application !
+
+Guillaume
+
+
+
+
+
+
+Hello,
+
+I am a huge fan of Day[9] TV and watch almost all his dailies and I cannot watch it live because the live is casting at 4am for French !
+
+Working as a software engineer, I decided to make an Android application in order to be able to watch and downloads Day9's episodes.
+The application is using the Blip.tv API to retrieve the content and a custom filter to merge episodes parts. The application allow you to watch directly on your phone or to download the episode and watch it offline later.
+
+[center][url=http://goo.gl/LHwJn]Day[9] TV - Android application[/url][/center]
+[u][b]Features :[/b][/u]
+[ul] Browse all Day[9] episodes.[/ul]
+[ul] Watch episodes directly through your phone or tablet.[/ul]
+[ul] Save your favorites episodes for an easy access.[/ul]
+[ul] Download episodes over WiFi and watch it later.[/ul]
+[ul] Search among videos with keywords.[/ul]
+[ul] Automatic videos list updates.[/ul]
+[ul] Notification of new availables videos.[/ul]
+
+[u]Note : [/u]The device registration step is optional. This registration is used to retrieve videos list automatically in backgroud.
+A notification can be displayed when new videos are availables.
+
+[u][b]Permissions :[/b][/u]
+[ul] Internet - Fetch the video list and play videos streaming.[/ul]
+[ul] Wake lock - Android C2DM notifications.[/ul]
+[ul] Accounts - Android C2DM notifications.[/ul]
+[ul] External Storage - Download videos to SD cards.[/ul]
+
+[u][b]Comming soon :[/b][/u]
+[ul] Automatic download new availables videos[/ul]
+[ul] Android tablet optimisations[/ul]
+
+I hope that you will enjoy the application. I am currently trying to port my application to iPhone & iPad because I know that lot of people are using iOS instead of Android :)
+Feel free to ask if you have any questions about this application !
+
+Guillaume
+
+
+
